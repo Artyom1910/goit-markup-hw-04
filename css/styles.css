@@ -115,25 +115,27 @@ a {
 }
 
 .logo-phone {
-  fill: var(--primary-text-color);
   width: 10px;
   height: 16px;
   margin-right: 10px;
 }
 
-.logo-phone:hover {
+svg {
+  fill: var(--primary-text-color);
+}
+
+.mail-link:hover svg {
+  fill: var(--accent-color);
+}
+
+.phono-link:hover svg {
   fill: var(--accent-color);
 }
 
 .logo-mail {
-  fill: var(--primary-text-color);
   width: 16px;
   height: 12px;
   margin-right: 10px;
-}
-
-.logo-mail:hover {
-  fill: var(--accent-color);
 }
 
 /* Hero */
@@ -230,14 +232,23 @@ a {
   fill: #afb1b8;
 }
 
-.icon-brand:hover,
-.icon-brand:focus {
+.clients-icon:hover .icon-brand {
   fill: var(--accent-color);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  border: 1px solid #2196f3;
+.clients-icon:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+  border-radius: 4px;
 }
 
 .icon-yaco {
@@ -268,16 +279,6 @@ a {
 .icon-tag {
   width: 88px;
   height: 45px;
-}
-
-.clients-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .list-clients {
